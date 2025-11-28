@@ -1,5 +1,5 @@
 body {
-    background-color: darkcyan;
+    background-color: #333;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: antiquewhite;
@@ -68,4 +68,13 @@ ul li {
 
 .done li:nth-child(odd) {
     background-color: rgba(0, 255,225,0.5);
+}
+
+input[type="checkbox"]:checked + span::after{
+    content:"🍳" ;
+}
+
+input[type="checkbox"]:checked + label{ 
+    text-decoration: line-through;
+    color: red;
 }
