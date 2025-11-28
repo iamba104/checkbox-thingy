@@ -70,7 +70,11 @@ ul li {
     background-color: rgba(0, 255,225,0.5);
 }
 
-input[type="checkbox"]:checked + p{
+input[type="checkbox"]:checked + span::after{
+    content:"🍳" ;
+}
+
+input[type="checkbox"]:checked + label{ 
     text-decoration: line-through;
     color: red;
 }
